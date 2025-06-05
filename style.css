@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+
+.navbar {
+  background-color: #68c4ca;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 70px;
+}
+
+.logo-link {
+  margin-right: auto; 
+  padding: 5px 0; 
+}
+
+.logo-img {
+  height: 40px;
+  vertical-align: middle; 
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px 0;
+  display: flex;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+font-size: large;
+margin: 3px;
+font-size: larger;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+ font-weight: bold;
+  color: rgb(2, 26, 243);
+}
+
+.navbar li a.active {
+  font-weight: bold;
+  color: rgb(3, 77, 25);
+}
+.navbar li a.login{
+   
+    background-color: #28a745;
+    color: white;
+  border-radius: 50px;
+  
+}
+
+.navbar li a.login:hover {
+  background-color: #218838;
+  color: white;
+}
+/* Main content */
+.main-section .content {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: 90vh;
+
+  box-sizing: border-box;
+ 
+}
+/* left-content */
+.main-section .content .left-content {
+    background-color:#77d1dd ;
+     float: left;
+
+     padding: 20px;
+
+    position: relative;  
+}
+.main-section .content .left-content .first-content {
+  margin-top: 15%;
+}
+.main-section .content .left-content .first-content h2 {
+  font-size: 210%;
+
+}
+.main-section .content .left-content h1{
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #333;
+}
+
+
+
+.main-section .content .right-content {
+background-color: #ffffff;
+  float: right;
+
+}
+/* img */
+.main-section .content  .homepage-img{
+   position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -40%);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+   width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
