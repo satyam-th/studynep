@@ -276,4 +276,58 @@ font-size: x-large;
   padding-left: 20px;
   margin-top: 5px;
 }
+/* responsive make  */
 
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column {
+        border-left-width: 3px;
+    }
+
+    .side-by-side-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container2 {
+        padding: 20px;
+    }
+
+    .container2 h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        padding: 15px;
+    }
+
+    .container2 h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .column {
+        padding: 15px;
+    }
+
+    .step-box {
+        padding: 20px;
+    }
+
+    .step-box h2 {
+        font-size: 20px;
+    }
+}
