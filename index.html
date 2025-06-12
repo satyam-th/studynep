@@ -3,159 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StudyNep | Your Future Starts Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4z5l5a5b5d5b5d5b5d5b5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="web/src/style.css">
-    <script src="web/src/script.js"></script>
 </head>
 <body>
     <header>
-        <!---navbar------->
-
         <nav class="navbar">
-  <a href="#home" class="logo-link">
-    <img src="img/logo.png" alt="StudyNep" class="logo-img">
-  </a>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-  <!-- Navigation Menu -->
-  <ul class="nav-menu">
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="web/course.html">Courses</a></li>
-    <li><a href="web/scholarship.html">Scholarship</a></li>
-    <li><a href="web/find-course.html">Find Course</a></li>
-    <li><a href="web/about.html">About Us</a></li>
-    <li><a class="login" href="web/login.html">Login</a></li>
-  </ul>
-</nav>
+            <a href="#home" class="logo-link">
+                <img src="img/logo.png" alt="StudyNep" class="logo-img">
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">🏠Home</a></li>
+                <li><a href="web/course.html"><i class="fas fa-book"></i> 📚Courses</a></li>
+                <li><a href="web/find-course.html"><i class="fas fa-search"></i> 🔍Find Course</a></li>
+                <li><a href="web/about.html"><i class="fas fa-info-circle"></i> ℹ️About Us</a></li>
+                <li><a class="login" href="web/login.html"><i class="fas fa-sign-in-alt"></i> 🔑Login</a></li>
+            </ul>
+        </nav>
     </header>
 
-<!---main section------>
-<main-section>
-    <section class="main-section">
-        <div class="content">
-           <div class="left-content">
-               <div class="first-content">
-                <h2>Choose us for your Education</h2>
-                <h2>we provide scholarship opportunities</h2>
-                <h2>and quality courses</h2>
-                <h2>in Nepal</span></h2>
-              </div>
-                
-                <p>StudyNep is a platform that connects students with educational opportunities in Nepal. </p>
-                <a href="#main-section2"  rel="down"><button class="explore-button">Explore</button></a>
+    <main>
+        <section class="main-section" id="home">
+            <div class="content">
+                <div class="left-content">
+                    <div class="first-content">
+                        <div class="top">
+                            <h1>Still Confused?</h1>
+                            <h1>About your future?</h1>
+                            <h1>Don't worry, we are here to help you!</h1>
+                        </div>
+                        <div class="bottom">
+                            <h2>Choose us for your Education</h2>
+                            <h2>We provide scholarship opportunities</h2>
+                            <h2>And quality courses in Nepal</h2>
+                        </div>
+                        <a href="#main-section2" rel="down"><button class="explore-button">Explore</button></a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="img/home-page.jpg" alt="home-img" class="homepage-img">
+                    <div class="text-rdown">
+                        <h1>MAKE YOUR DREAMS COME TRUE</h1>
+                    </div>
+                </div>
             </div>
-            <br>
-              
-            <div class="right-content">
-              <h1>MAKE YOUR DREAMS </h1><br>
-               <img src="img/homepage.png" alt="Hero Image" class="homepage-img">
-                 <div class="text-overlay">
-             <h1>COME TRUE</h1>
-             </div>
+        </section>
+
+        <section id="main-section2">
+            <div class="container2">
+                <h1>Don't <span style="color: #007BFF;">Waste</span> Your <span style="color: #DC3545;">Time</span> on a wrong course.</h1>
+                <p class="subtitle">So here we are now to guide you.</p>
+                 <hr style="border: 1px solid #000000;">
+                <div class="box">
+                    <div class="column">
+                        <h2>Why to choose the right course</h2>
+                        <ol>
+                            <li><strong>Career Direction:</strong> Guides you toward your dream job or profession.</li>
+                            <li><strong>Time & Cost Efficiency:</strong> Prevents delays and extra expenses from switching courses.</li>
+                            <li><strong>Better Performance:</strong> You're more likely to succeed in subjects you enjoy.</li>
+                            <li><strong>Job Opportunities:</strong> The right course builds skills that employers actually need.</li>
+                            <li><strong>Personal Satisfaction:</strong> Makes your study experience enjoyable and meaningful.</li>
+                        </ol>
+                    </div>
+                    <div class="column">
+                        <h2>What happens when choosing the wrong course</h2>
+                        <ol>
+                            <li><strong>Lack of Interest:</strong> You may feel bored, unmotivated, or stressed.</li>
+                            <li><strong>Wasted Time & Money:</strong> You might need to drop out or switch, losing time and resources.</li>
+                            <li><strong>Poor Performance:</strong> Studying something you don't enjoy often leads to low grades.</li>
+                            <li><strong>Career Confusion:</strong> You may struggle to find a job you like or feel stuck in an unwanted field.</li>
+                            <li><strong>Mental Frustration:</strong> Can affect your confidence and cause regret or anxiety.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-      </div>
- 
-    </section>
-    <!-- section2 -->
-    <section id="main-section2">
-        <div class="container2">
+        </section>
 
-            <h1>Don't <span style="color: blue;">Waste</span> Your <span style="color: red;">Time</span> on wrong course.</h1>
-            <p class="subtitle">So here we are now to guide you.</p>
-            <br>
-            <style>
-            hr {
-              border: 1px solid #000;
-            }
-          </style><hr> <br>
-     <div class="box">
-      <div class="column">
-        <h2>Why to choose right course</h2>
-        <ol>
-          <li><strong>Career Direction</strong><br>Guides you toward your dream job or profession.</li>
-          <li><strong>Time & Cost Efficiency</strong><br>Prevents delays and extra expenses from switching courses.</li>
-          <li><strong>Better Performance</strong><br>You're more likely to succeed in subjects you enjoy.</li>
-          <li><strong>Job Opportunities</strong><br>Right course builds skills that employers actually need.</li>
-          <li><strong>Personal Satisfaction</strong><br>Makes your study experience enjoyable and meaningful.</li>
-        </ol>
-      </div>
-      <div class="column">
-        <h2>What happen when choosing the wrong course</h2>
-        <ol>
-          <li><strong>Lack of Interest</strong><br>You may feel bored, unmotivated, or stressed.</li>
-          <li><strong>Wasted Time & Money</strong><br>You might need to drop out or switch, losing time and resources.</li>
-          <li><strong>Poor Performance</strong><br>Studying something you don’t enjoy often leads to low grades.</li>
-          <li><strong>Career Confusion</strong><br>You may struggle to find a job you like or feel stuck in an unwanted field.</li>
-          <li><strong>Mental Frustration</strong><br>Can affect your confidence and cause regret or anxiety.</li>
-        </ol>
-      </div>
-    </div>
+       <section class="section3">
+            <h1 class="title"> Top National Universities in Nepal</h1>
+            <p style="text-align: center;">Explore the leading universities in Nepal that offer a variety of programs to help you achieve your academic goals.</p>
+            <hr style="border: 1px solid #000000;">
+            <div class="uni-grid-container">
+                <div class="uni-card">
+                    <img src="img/tu.jpeg" alt="Tribhuvan University" class="uni-card-img">
+                    <div class="uni-card-content">
+                        <h3>Tribhuvan University (TU)</h3>
+                        <p>Nepal's largest and oldest university, offering a wide range of programs in Science, Management, Humanities, Engineering, and Medicine. It has multiple affiliated colleges across the country.</p>
+                        <div class="uni-card-footer">
+                            <span><i class="fas fa-calendar-alt"></i> Est: 1959 </span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kirtipur, Kathmandu </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="uni-card">
+                    <img src="img/ku.jpeg" alt="Kathmandu University" class="uni-card-img">
+                    <div class="uni-card-content">
+                        <h3>Kathmandu University (KU)</h3>
+                        <p>Known for its strong engineering, medical, and management programs. It emphasizes research and innovation. </p>
+                        <div class="uni-card-footer">
+                            <span><i class="fas fa-calendar-alt"></i> Est: 1991 </span>
+                            <span><i class="fas fa-map-marker-alt"></i> Dhulikhel, Kavre </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="uni-card">
+                    <img src="img/PoU.jpeg" alt="Pokhara University" class="uni-card-img">
+                    <div class="uni-card-content">
+                        <h3>Pokhara University (PoU)</h3>
+                        <p>PoU provides degrees in Management, Science, and Technology. It is gaining recognition for IT and business studies.</p>
+                        <div class="uni-card-footer">
+                            <span><i class="fas fa-calendar-alt"></i> Est: 1997 </span>
+                            <span><i class="fas fa-map-marker-alt"></i> Pokhara, Kaski </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="uni-card">
+                    <img src="img/pu.jpg" alt="Purbanchal University" class="uni-card-img">
+                    <div class="uni-card-content">
+                        <h3>Purbanchal University (PU)</h3>
+                        <p>PU offers courses in Business, Science, Engineering, and Health Sciences. It has affiliated colleges mainly in eastern Nepal.</p>
+                        <div class="uni-card-footer">
+                            <span><i class="fas fa-calendar-alt"></i> Est: 1993 </span>
+                            <span><i class="fas fa-map-marker-alt"></i> Gothgaun, Morang </span>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+        </section>
 
-    <div class="step-box">
-      <h2>How to Choose the Right Course (Step-by-Step)</h2>
+        <section class="foreign-colleges-section">
+            <h1 class="title">Foreign University-Affiliated Colleges in Nepal</h1>
+            <p class="subtitle">These colleges collaborate with universities from countries like the UK, Malaysia, Scotland, Australia, and Thailand, offering degrees in business, IT, hospitality, fashion, and more.</p>
+           <hr style="border: 1px solid #000000;">
+            <div class="college-grid">
+                <div class="college-card">
+                <img src="img/ace-i.jpeg" alt="Ace International Business School Logo">
+                    <h4>BBA, MBA (SCOTLAND)</h4>
+                    <p>Glasgow Caledonian University, Scotland</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/british-i.jpg" alt="British International College Logo">
+                    <h4>BSc(hons), MSc</h4>
+                    <p>Keele University, U.K.</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/cg-i.webp" alt="CG Institute of Management Logo">
+                    <h4>BBA, MBA, IT</h4>
+                    <p>Limkokwing University of Creative Technology, Malaysia</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/silver-i.jpeg" alt="Silver Mountain School of Hotel Management Logo">
+                    <h4>Hospitality, Culinary, Art programs</h4>
+                    <p>Queen Margaret University, UK.</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/midvalley-i.jpg" alt="Mid-Valley International College Logo">
+                    <h4>Account, Finance, hospitality management</h4>
+                    <p>Help University, Malaysia.</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/kcm-i.png" alt="Kathmandu College of Management Logo">
+                    <h4>BBA, MBA</h4>
+                    <p>Siam University, Thailand</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/kings-i.png" alt="King's College Logo">
+                    <h4>Business, IT PROGRAM, MBA, BBA, BSIT</h4>
+                    <p>Westcliff University, USA</p>
+                </div>
+                <div class="college-card">
+                    <img src="img/iec-i.svg" alt="IEC College of Art & Fashion Logo">
+                    <h4>Fashion and interior architecture program</h4>
+                    <p>Limkokwing University of Creative Technology, Malaysia</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      <ol class="side-by-side-list">
-         <div class="column">
-        <li><strong>Know Your Interests</strong>
-          <ul>
-            <li>What subjects or activities do you enjoy?</li>
-            <li>What are you passionate or curious about?</li>
-          </ul>
-        </li>
-        <li><strong>Identify Your Strengths</strong>
-          <ul>
-            <li>Are you better at science, math, communication, creativity, or hands-on work?</li>
-            <li>Choose a course that matches your natural skills.</li>
-          </ul>
-        </li>
-        <li><strong>Set Your Career Goals</strong>
-          <ul>
-            <li>Think about what kind of job or lifestyle you want.</li>
-            <li>Research which courses lead to that career.</li>
-          </ul>
-        </li>
-        <li><strong>Research the Course Details</strong>
-          <ul>
-            <li>Check what subjects are covered, how long it takes, and what skills you'll learn.</li>
-            <li>Look at the course curriculum, not just the title.</li>
-          </ul>
-        </li>
-         </div>
-         <div class="column">
-        <li><strong>Check Job Market Demand</strong>
-          <ul>
-            <li>Are there jobs available in the field you're choosing?</li>
-            <li>What is the expected salary or growth in that profession?</li>
-          </ul>
-        </li>
-        <li><strong>Compare Institutions</strong>
-          <ul>
-            <li>Research colleges/universities offering the course.</li>
-            <li>Consider location, reputation, facilities, and scholarships.</li>
-          </ul>
-        </li>
-        <li><strong>Talk to People</strong>
-          <ul>
-            <li>Speak with teachers, counselors, or students in the course.</li>
-            <li>Ask about their experiences and challenges.</li>
-          </ul>
-        </li>
-        <li><strong>Consider Your Budget and Support</strong>
-          <ul>
-            <li>Can you afford the course (tuition, books, living costs)?</li>
-            <li>Do you have financial or family support?</li>
-          </ul>
-        </li>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About StudyNep</h3>
+                <p>StudyNep is your one-stop platform for discovering educational opportunities in Nepal. We connect students with the right courses, scholarships, and colleges to shape their future.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="web/course.html">Courses</a></li>
+                    <li><a href="web/scholarship.html">Scholarship</a></li>
+                    <li><a href="web/about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                <p><i class="fas fa-phone"></i> +977 9800000000</p>
+                <p><i class="fas fa-envelope"></i> info@studynep.com</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
-      </ol>
-    </div>
-  </div>
-  <section  id="main-section3">
+        <div class="footer-bottom">
+            <p>&copy; 2024 StudyNep. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    
-  </section>
-</main-section>
-
-
+    <script src="web/src/script.js"></script>
 </body>
 </html>
