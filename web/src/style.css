@@ -100,7 +100,6 @@ hr {
 
 /* Main Section */
 .main-section {
-    padding-top: 60px;
     min-height: 100vh;
     display: flex;
 }
@@ -113,6 +112,7 @@ hr {
 }
 
 .left-content {
+     padding-top: 60px;
     flex: 1 1 50%;
     padding: 40px;
     background-color: #e9ecef;
