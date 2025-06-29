@@ -16,11 +16,36 @@ window.addEventListener('load', () => {
     }
 });
 
+//test stream 
+document.getElementById('stream').addEventListener("change", function() {
+    var substream = document.getElementById('sub-stream');
+    var selectedValue = this.value;
+
+    var optionsq = [];
+
+    if (selectedValue === 'science') {
+        optionsq = ['Bio', 'Computer'];
+    } else if (selectedValue === 'management') {
+        optionsq = ['H.M. without math', 'Computer with math', 'Computer without math', 'H.M with math', 'Business with math', 'Business without math'];
+    } else if (selectedValue === 'humanities') {
+        optionsq = [''];
+    }
+
+    substream.innerHTML = '';
+
+    optionsq.forEach(function(sub) {
+        var option = document.createElement('option');
+        option.value = sub.toLowerCase();
+        option.text = sub;
+        substream.appendChild(option);
+    });
+});
 
 // Find my course form
 document.getElementById('interest').addEventListener("change", function() {
     var subCategory = document.getElementById('department');
     var selectedValue = this.value;
+
 
     var options = [];
 
