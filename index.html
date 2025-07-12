@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyNep</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4z5l5a5b5d5b5d5b5d5b5" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="web/src/style.css">
+    <link rel="stylesheet" href="web/src/css/style.css">
+   
 </head>
 <body>
     <header>
@@ -18,11 +16,12 @@
             </a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-menu">
-                <li><a class="active" href="index.html">🏠Home</a></li>
-                <li><a href="web/course.html"><i class="fas fa-book"></i> 📚Courses</a></li>
-                <li><a href="web/find-course.html"><i class="fas fa-search"></i> 🔍Find Course</a></li>
-                <li><a href="web/about.html"><i class="fas fa-info-circle"></i> ℹ️About Us</a></li>
-                <li><a class="login" href="web/login.html"><i class="fas fa-sign-in-alt"></i> 🔑Login</a></li>
+                <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="web/course.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="web/find-course.html"><i class="fas fa-search"></i> Find Course</a></li>
+                <li><a href="web/our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a href="web/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a class="login" href="web/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +43,9 @@
                             <h2>And quality courses in Nepal</h2>
                         </div>
                         <a href="#main-section2" rel="down"><button class="explore-button">Explore</button></a>
+                        <br><br>
+                              <a href="#national-universities" rel="down"><button class="explore-button">Nepalis Universities</button></a>
+                                       <a href="#foreign-colleges" rel="down"><button class="explore-button">Foreign Affiliated Colleges</button></a>
                     </div>
                 </div>
                 <div class="right-content">
@@ -85,7 +87,7 @@
             </div>
         </section>
 
-       <section class="section3">
+       <section id="national-universities" class="section3">
             <h1 class="title"> Top National Universities in Nepal</h1>
             <p style="text-align: center;">Explore the leading universities in Nepal that offer a variety of programs to help you achieve your academic goals.</p>
             <hr style="border: 1px solid #000000;">
@@ -137,10 +139,10 @@
                  </div>
         </section>
 
-        <section class="foreign-colleges-section">
+        <section  id="foreign-colleges" class="foreign-colleges-section">
             <h1 class="title">Foreign University-Affiliated Colleges in Nepal</h1>
-            <p class="subtitle">These colleges collaborate with universities from countries like the UK, Malaysia, Scotland, Australia, and Thailand, offering degrees in business, IT, hospitality, fashion, and more.</p>
-           <hr style="border: 1px solid #000000;">
+            <p class="subtitle">These colleges collaborate with universities from countries like the UK, Malaysia, Scotland, Australia, and Thailand, offering degrees in business, IT, hospitality, fashion, and more.  <a href="web/inside/home/Foreignunicolleges.html" rel="down"><button class="explore-button">Details</button></a></p>
+            <hr style="border: 1px solid #000000;">
             <div class="college-grid">
                 <div class="college-card">
                 <img src="img/ace-i.jpeg" alt="Ace International Business School Logo">
@@ -216,7 +218,7 @@
                 </div>
         </div>
     </footer>
-
-    <script src="web/src/script.js"></script>
+    <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
+    <script src="web/src/js/script.js"></script>
 </body>
 </html>

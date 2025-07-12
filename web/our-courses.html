@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/styleoc.css">
+   
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo-link">
+                <img src="/studynep/img/logo.png" alt="StudyNep" class="logo-img">
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu">
+                <li><a href="/studynep/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="course.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="find-course.html"><i class="fas fa-search"></i> Find Course</a></li>
+                <li><a href="our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a class="login" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <h2 class="main-title">Our Comprehensive Courses</h2>
+        <section id="all-courses-section" class="course-section">
+            <h3 class="section-title">We teach skills for your future</h3>
+            <div class="course-grid">
+
+                <!-- Python Programming Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Python Programming</h4>
+                    <p class="course-description">
+                        Build a strong programming foundation with Python basics, data structures, and real-world projects.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Project-based, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Python Basics, Control Flow</li>
+                                <li>Month 2: Data Structures, Functions, Modules</li>
+                                <li>Month 3: OOP, Libraries, Final Project</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Basic Computer Training Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Basic Computer Training</h4>
+                    <p class="course-description">
+                        Master MS Office, internet, email, and essential computer skills for beginners.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Hands-on, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Hardware, OS, File Management</li>
+                                <li>Month 2: MS Office (Word, Excel, PowerPoint)</li>
+                                <li>Month 3: Internet, Email, Safety, Typing</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Web Design Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Web Design</h4>
+                    <p class="course-description">
+                        Learn HTML, CSS, JavaScript, and responsive design to create modern websites.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Hands-on, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: HTML5, Basic CSS3</li>
+                                <li>Month 2: Advanced CSS3, Responsive Design</li>
+                                <li>Month 3: JavaScript, Portfolio Project</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- C Programming Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">C Programming</h4>
+                    <p class="course-description">
+                        Learn C fundamentals, memory management, and build simple projects.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Project-based, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Syntax, Data Types, Control Structures</li>
+                                <li>Month 2: Functions, Pointers, Arrays</li>
+                                <li>Month 3: Structures, File Handling, Projects</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- C++ Programming Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">C++ Programming</h4>
+                    <p class="course-description">
+                        Dive into object-oriented programming and system-level applications with C++.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Project-based, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: OOP, Classes, Constructors</li>
+                                <li>Month 2: Inheritance, Polymorphism</li>
+                                <li>Month 3: Templates, Exception Handling, STL</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- DSA Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">DSA</h4>
+                    <p class="course-description">
+                        Master data structures and algorithms for efficient problem-solving.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Problem-solving, Competitive, Online/Offline</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Arrays, Linked Lists, Stacks, Queues</li>
+                                <li>Month 2: Trees, Graphs, Hashing</li>
+                                <li>Month 3: Sorting, Searching, Complexity, Competitive Programming</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Networking Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Networking</h4>
+                    <p class="course-description">
+                        Explore networking concepts and how computers communicate online.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Visual + Lab-based, Entry-level</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Networking Basics, Topologies, OSI/TCP Models</li>
+                                <li>Month 2: IP Addressing, Protocols</li>
+                                <li>Month 3: Routers, Security, Wireless, Troubleshooting</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Computer Fundamentals Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Computer Fundamentals</h4>
+                    <p class="course-description">
+                        Understand computer components, software, and basic troubleshooting.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Conceptual + Practical Demos</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Hardware Components</li>
+                                <li>Month 2: Software, OS Installation</li>
+                                <li>Month 3: File Management, Networking, Security</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Web Hosting Course Card -->
+                <div class="course-card">
+                    <h4 class="course-name">Web Hosting</h4>
+                    <p class="course-description">
+                        Learn website hosting, domain management, and deployment.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Step-by-step, Practical deployment</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Domain Registration, DNS</li>
+                                <li>Month 2: Hosting Types, cPanel</li>
+                                <li>Month 3: FTP, Deployment, Security</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!-- Cybersecurity Basics -->
+                <div class="course-card">
+                    <h4 class="course-name">Cybersecurity Basics</h4>
+                    <p class="course-description">
+                        Protect data, avoid threats, and practice safe online habits.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Theory + Simulation-based</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Cybersecurity, Attacks, Privacy</li>
+                                <li>Month 2: Passwords, Encryption, Antivirus</li>
+                                <li>Month 3: Social Engineering, Safe Browsing, Incident Response</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+
+                <!-- Graphic Design -->
+                <div class="course-card">
+                    <h4 class="course-name">Graphic Design</h4>
+                    <p class="course-description">
+                        Learn design principles, Photoshop, Illustrator, and create stunning visuals.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Project-based, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: Design Basics, Color Theory</li>
+                                <li>Month 2: Photoshop, Illustrator</li>
+                                <li>Month 3: Portfolio Project, Branding</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+                <!--Digital Marketing -->
+                <div class="course-card">
+                    <h4 class="course-name">Digital Marketing</h4>
+                    <p class="course-description">
+                        Master SEO, social media, and online advertising for business growth.
+                    </p>
+                    <ul class="course-details">
+                        <li><strong>Type:</strong> 3 months, Instructor-led, Practical, Online/In-person</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>Month 1: SEO, Content Marketing</li>
+                                <li>Month 2: Social Media, Email Marketing</li>
+                                <li>Month 3: Google Ads, Analytics, Campaigns</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="enroll-btn">Enroll</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+       <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About StudyNep</h3>
+                <p>StudyNep is your one-stop platform for discovering educational opportunities in Nepal. We connect students with the right courses, scholarships, and colleges to shape their future.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="web/course.html">Courses</a></li>
+                    <li><a href="web/scholarship.html">Scholarship</a></li>
+                    <li><a href="web/about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                <p><i class="fas fa-phone"></i> +977 98xxxxxx</p>
+                <p><i class="fas fa-envelope"></i> info@studynep.com</p>
+            </div>
+             <div class="social-media">
+                   <h3>Follow Us</h3>
+                    <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+                    <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+                    <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+                    <a href="#">LinkedIn <i class="fab fa-linkedin-in"></i></a>
+                </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

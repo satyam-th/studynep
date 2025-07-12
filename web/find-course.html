@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyNep</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4z5l5a5b5d5b5d5b5d5b5" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/stylefc.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/stylefc.css">
+
 </head>
 <body>
     <header>
@@ -19,14 +17,16 @@
             </a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-menu">
-                <li><a href="/studynep/index.html">🏠Home</a></li>
-                <li><a href="course.html">📚 Courses</a></li>
-                <li><a class="active" href="find-course.html">🔍 Find Course</a></li>
-                <li><a href="about.html">ℹ️ About Us</a></li>
-                <li><a class="login" href="login.html">🔑 Login</a></li>
+                <li><a href="/studynep/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="course.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a class="active" href="find-course.html"><i class="fas fa-search"></i> Find Course</a></li>
+                <li><a href="our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a class="login" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             </ul>
         </nav>
     </header>
+
 
 
 <div class="form-container">
@@ -35,51 +35,49 @@
 
     <form id="courseForm">
       <label for="fullname">Full Name*:</label>
-      <input type="text" id="fullname" placeholder="e.g.: Ram KC" required>
+      <input type="text" id="fullname" class="form-input" placeholder="e.g.: Ram KC" required>
 
       <label for="stream">+2 Stream*:</label>
-      <select id="stream" name="stream" required>
+      <select id="stream" name="stream" class="form-input" required>
         <option value="">--- please select your stream ---</option>
         <option value="science">Science</option>
         <option value="management">Management</option>
         <option value="humanities">Humanities</option>
       </select>
-      <select id="sub-stream" name="sub-stream">
+
+      <select id="sub-stream" name="sub-stream" class="form-input">
         <option value="">--- sub stream ---</option>
       </select>
 
       <label for="gpa">G.P.A*:</label>
-      <input type="number" id="gpa" min="0" max="4" step="0.01" placeholder="Number up to 4 " required>
+      <input type="number" id="gpa" class="form-input" min="0" max="4" step="0.01" placeholder="Number up to 4" required>
 
       <label for="interest">Interest*:</label>
-      <select id="interest" required>
+      <select id="interest" class="form-input" required>
         <option value="">--- please select your sector ---</option>
         <option value="technology">Technology</option>
         <option value="medicine">Medicine</option>
         <option value="business">Business</option>
       </select>
 
-      <select id="department">
+      <select id="department" class="form-input">
         <option value="">--- department ---</option>
       </select>
 
       <label for="description">Explain Interest:</label>
-      <textarea id="description" rows="4" placeholder="Describe..."></textarea>
+      <textarea id="description" class="form-textarea" rows="4" placeholder="Describe..."></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit" class="form-button">Submit</button>
     </form>
   </div>
 
   <div class="result-section">
     <h2>Suggestion for you</h2>
-    <div id="suggestion-n"></div>
-    <div id="suggestion-c"></div>
-    <div id="suggestion-l"></div>
-   
+    <div id="suggestion-n" class="suggestion-box"></div>
+    <div id="suggestion-c" class="suggestion-box"></div>
+    <div id="suggestion-l" class="suggestion-box"></div>
   </div>
 </div>
-
-
 
 
 
@@ -113,13 +111,15 @@
             </div>
              <div class="social-media">
                    <h3>Follow Us</h3>
-                    <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
-                    <a href="#">Twitter<i class="fab fa-twitter"></i></a>
-                    <a href="#">Instagram<i class="fab fa-instagram"></i></a>
-                    <a href="#">LinkedIn<i class="fab fa-linkedin-in"></i></a>
+                    <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+                    <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+                    <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+                    <a href="#">LinkedIn <i class="fab fa-linkedin-in"></i></a>
                 </div>
         </div>
     </footer>
     <script src="src/script.js"></script>
+    <script src="src/js/finding.js"></script>
+    <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
 </body>
 </html>

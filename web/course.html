@@ -1,15 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyNep</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4z5l5a5b5d5b5d5b5d5b5" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/stylec.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/stylec.css">
 </head>
 <body>
     <header>
@@ -19,503 +15,519 @@
             </a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-menu">
-                <li><a href="/studynep/index.html">🏠Home</a></li>
-                <li><a class="active" href="course.html">📚 Courses</a></li>
-                <li><a  href="find-course.html">🔍 Find Course</a></li>
-                <li><a href="about.html">ℹ️ About Us</a></li>
-                <li><a class="login" href="login.html">🔑 Login</a></li>
+                <li><a  href="/studynep/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a class="active" href="course.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="find-course.html"><i class="fas fa-search"></i> Find Course</a></li>
+                <li><a href="our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a class="login" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-           
-        <section class="course-section">
-                <h1 style="color:green;">Our Courses</h1>
-                 <div class="stream-container">
-            <h2 class="stream-title" style="color: green;">We teach skills related to your future(most learning outcomes)</h2>
-                      <div class="course-grid">
+   <div class="container">
+        <h1 class="title" >Top Course of Nepali Universities</h1>
+              <!-- <hr style="border: 2px solid #000000;"> -->
+     <a href="#science" rel="down"><button class="explore-button">Science</button></a>
+     <a href="#management" rel="down"><button class="explore-button">Management</button></a>
+     <a href="#humanities" rel="down"><button class="explore-button">Humanities</button></a>
+     <a href="#entrance" rel="down"><button class="explore-button">Entrance</button></a>
+     <br>
+     <br>
+           <hr style="border: 1px solid #000000;">
 
-                            <div class="course-card">
-    <div class="course-name-o">Python Programming</div>
-    <div class="course-details">
-        <p>Learn Python basics, data structures, and real-world applications to build a strong programming foundation.</p>
-        <strong>Course Type:</strong>
-        <p>Instructor-led, Project-based, Online/In-person</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Python syntax and semantics</li>
-            <li>Data structures and algorithms</li>
-            <li>Problem-solving with Python</li>
-            <li>Introduction to real-world Python applications</li>
-        </ul>
-    </div>
-</div>
+        <main>
+            <!-- Science Stream Section -->
+            <section id="science" class="stream-section">
+                <h2 class="stream-title">Science Programs</h2>
+                <div class="course-grid">
+                    <!-- BSc. CSIT -->
+                    <div class="course-card">
+                        <h3 class="course-name">BSc. CSIT</h3>
+                        <p class="university-name">Tribhuvan University & Pokhara University</p>
+                        <p class="course-description">A 4-year IT-focused course combining computer science theory with practical IT skills.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Programming</li>
+                                <li>Software Development</li>
+                                <li>Database Management</li>
+                                <li>Web Development</li>
+                                <li>Network & Security</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Fundamentals of Computer Systems, Programming (C/Java), Mathematics, Physics/Chemistry</li>
+                                <li><strong>Year 2:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Digital Logic</li>
+                                <li><strong>Year 3:</strong> Operating Systems, Computer Networks, Software Engineering, Web Technologies, Artificial Intelligence</li>
+                                <li><strong>Year 4:</strong> Advanced Programming, Electives (e.g., Mobile Computing, Cloud Computing, Cyber Security), Project Work, Internship</li>
+                            </ul>
+                        </div>
+                     
+                    </div>
+                      <!-- <br> -->
 
-<div class="course-card">
-    <div class="course-name-o">Basic Computer Training</div>
-    <div class="course-details">
-        <p>Learn fundamental computer skills including MS Office, internet use, email, and typing for beginners.</p>
-        <strong>Course Type:</strong>
-        <p>Instructor-led, Hands-on, Online/In-person</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Microsoft Office tools</li>
-            <li>Internet browsing and email management</li>
-            <li>Typing and basic computer operations</li>
-            <li>Introduction to IT concepts</li>
-        </ul>
-    </div>
-
-
-</div>
-<div class="course-card">
-    <div class="course-name-o">Web Design</div>
-    <div class="course-details">
-        <p>Learn HTML5, CSS3, JavaScript, and responsive web design principles to create modern websites.</p>
-        <strong>Course Type:</strong>
-        <p>Instructor-led, Hands-on, Online/In-person</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>HTML5 and CSS3</li>
-            <li>Responsive design techniques</li>
-            <li>JavaScript basics for interactivity</li>
-            <li>Introduction to Tailwind CSS</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">C Programming</div>
-    <div class="course-details">
-        <p>Focus on variables, functions, arrays, and memory management using the C programming language.</p>
-        <strong>Course Type:</strong>
-        <p>Instructor-led, Project-based, Online/In-person</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Variables and data types</li>
-            <li>Functions and modular programming</li>
-            <li>Arrays and pointers</li>
-            <li>Memory management concepts</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">C++ Programming</div>
-    <div class="course-details">
-        <p>Learn object-oriented programming and system-level applications using C++.</p>
-        <strong>Course Type:</strong>
-        <p>Instructor-led, Project-based, Online/In-person</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Object-oriented programming concepts</li>
-            <li>Classes and objects</li>
-            <li>Inheritance and polymorphism</li>
-            <li>Application development with C++</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">DSA</div>
-    <div class="course-details">
-        <p>Understand efficient ways to store, access, and process data using core DSA principles.</p>
-        <strong>Course Type:</strong>
-        <p>Problem-solving, Competitive, Online/Offline</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Arrays, Linked Lists, Stacks, Queues</li>
-            <li>Trees, Graphs, Hashing</li>
-            <li>Sorting & Searching techniques</li>
-            <li>Algorithm analysis (Time/Space)</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">Networking</div>
-    <div class="course-details">
-        <p>Get introduced to networking concepts and how computers communicate over the internet.</p>
-        <strong>Course Type:</strong>
-        <p>Visual + Lab-based, Entry-level</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>IP Addressing & Subnetting</li>
-            <li>OSI and TCP/IP models</li>
-            <li>Switches, Routers, DNS, DHCP</li>
-            <li>Network security basics</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">Computer Fundamentals</div>
-    <div class="course-details">
-        <p>Learn how computers work from the inside-out, including their components and functionality.</p>
-        <strong>Course Type:</strong>
-        <p>Conceptual + Practical Demos</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Understanding CPU, RAM, Motherboards</li>
-            <li>I/O devices and storage</li>
-            <li>BIOS and OS installation</li>
-            <li>Troubleshooting basics</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">Web Hosting</div>
-    <div class="course-details">
-        <p>Learn how websites are hosted and connected to domains for online accessibility.</p>
-        <strong>Course Type:</strong>
-        <p>Step-by-step, Practical deployment</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Domain registration</li>
-            <li>DNS & NameServers</li>
-            <li>Shared vs VPS hosting</li>
-            <li>FTP and CPanel usage</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name-o">Cybersecurity Basics</div>
-    <div class="course-details">
-        <p>Understand how to protect data, avoid online threats, and practice safe browsing.</p>
-        <strong>Course Type:</strong>
-        <p>Theory + Simulation-based</p>
-        <strong>Skills Gained:</strong>
-        <ul>
-            <li>Types of cyber attacks</li>
-            <li>Password safety & encryption</li>
-            <li>Antivirus & firewall setup</li>
-            <li>Phishing and social engineering</li>
-        </ul>
-    </div>
-</div>
-
-</div>
+                    <!-- BE Computer -->
+                    <div class="course-card">
+                        <h3 class="course-name">BE Computer</h3>
+                        <p class="university-name">Pokhara University</p>
+                        <p class="course-description">Combines electronics engineering with computer software knowledge to build intelligent systems and applications.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Embedded Systems</li>
+                                <li>Software & Hardware Design</li>
+                                <li>Networking</li>
+                                <li>Robotics</li>
+                                <li>Programming</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1 (Sem 1 & 2):</strong> Engineering Mathematics, Physics, Chemistry, Programming (C/C++), Basic Electrical/Mechanical Engineering</li>
+                                <li><strong>Year 2 (Sem 3 & 4):</strong> Engineering Mathematics, Logic Circuits, Data Structure & Algorithm, Electronic Devices, Microprocessors, Theory of Computation</li>
+                                <li><strong>Year 3 (Sem 5 & 6):</strong> Numerical Methods, Microprocessor System & Interfacing, Operating System, Computer Graphics, Data Communication, Database Management System, Software Engineering, Minor Project</li>
+                                <li><strong>Year 4 (Sem 7 & 8):</strong> Computer Architecture, Digital Signal Processing, Computer Network, Artificial Intelligence, Image Processing & Pattern Recognition, Major Project Work, Electives</li>
+                            </ul>
+                        </div>
                    
-</div>
-    
+                    </div>
+<!-- <br> -->
+                    <!-- BIT -->
+                    <div class="course-card">
+                        <h3 class="course-name">BIT</h3>
+                        <p class="university-name">Tribhuvan University</p>
+                        <p class="course-description">Focuses on IT systems, networking, and programming applications in real-world environments.</p>
+                        <p class="note">*Also available for management students with math.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Networking</li>
+                                <li>Web Development</li>
+                                <li>Project Management</li>
+                                <li>Software Engineering</li>
+                                <li>Cybersecurity</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Fundamentals of IT, Programming, Mathematics, Internet Technology</li>
+                                <li><strong>Year 2:</strong> Object-Oriented Programming, Data Structures, Database Management, Digital Systems</li>
+                                <li><strong>Year 3:</strong> Software Engineering, Computer Architecture, Operating Systems, Data Communication & Networks</li>
+                                <li><strong>Year 4:</strong> Artificial Intelligence, Cloud Computing, Digital Marketing, Research Methods, Project Work, Specializations</li>
+                            </ul>
+                        </div>
+                  
+                    </div>
 
+                    <!-- BBIS -->
+                    <div class="course-card">
+                        <h3 class="course-name">BBIS</h3>
+                        <p class="university-name">Kathmandu University</p>
+                        <p class="course-description">A 4-year combined degree in business and information systems management.</p>
+                        <p class="note">*Also available for management students with math.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Systems Analysis</li>
+                                <li>Information Strategy</li>
+                                <li>Business Process Modeling</li>
+                                <li>IT Consulting</li>
+                                <li>Project Management</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Business Fundamentals, Introductory IT, Economics, Accounting</li>
+                                <li><strong>Year 2:</strong> Business Process, Systems Analysis, Database Concepts, Statistics</li>
+                                <li><strong>Year 3:</strong> Information Systems Management, IT Project Management, E-commerce, Data Analytics</li>
+                                <li><strong>Year 4:</strong> Strategic IT, IT Consulting, Advanced Business Applications, Research Project</li>
+                            </ul>
+                        </div>
+                      
+                    </div>
 
-            </div>
-            <h1>Top Courses of university</h1>
-
-            <div class="stream-container">
-            <h2 class="stream-title">Science</h2>
-            <div class="course-grid">
-                <div class="course-card">
-                <div class="course-name">BSc. CSIT</div>
-                <div class="course-details">
-                    <div class="university">Tribhuvan University & Pokhara University</div>
-                    <p>A 4-year IT-focused course combining computer science theory with practical IT skills.</p>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Programming</li>
-                    <li>Software Development</li>
-                    <li>Database Management</li>
-                    <li>Web Development</li>
-                    <li>Network & Security</li>
-                    </ul>
+                    <!-- BArch -->
+                    <div class="course-card">
+                        <h3 class="course-name">BArch</h3>
+                        <p class="university-name">Pokhara University</p>
+                        <p class="course-description">A 5-year professional degree in architectural design, planning, and construction.</p>
+                        <p class="note">*Also available for management students with math.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Architectural Design</li>
+                                <li>Urban Planning</li>
+                                <li>Building Construction</li>
+                                <li>Interior Design</li>
+                                <li>Sustainable Design</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Basic Design, Architectural Graphics, Building Materials, History of Architecture</li>
+                                <li><strong>Year 2:</strong> Architectural Design Studio, Building Construction, Structural Analysis, Environmental Design</li>
+                                <li><strong>Year 3:</strong> Advanced Design Studio, Urban Planning, Building Services, Landscape Architecture</li>
+                                <li><strong>Year 4:</strong> Professional Practice, Thesis Preparation, Electives, Site Planning</li>
+                                <li><strong>Year 5:</strong> Architectural Thesis Project, Internship</li>
+                            </ul>
+                        </div>
+                     
+                    </div>
                 </div>
-                </div>
-                <div class="course-card">
-                <div class="course-name">BE Computer</div>
-                <div class="course-details">
-                    <div class="university">Pokhara University</div>
-                    <p>Combines electronics engineering with computer software knowledge to build intelligent systems and applications.</p>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Embedded Systems</li>
-                    <li>Software & Hardware Design</li>
-                    <li>Networking</li>
-                    <li>Robotics</li>
-                    <li>Programming</li>
-                    </ul>
-                </div>
-                </div>
-                <div class="course-card">
-                <div class="course-name">BIT</div>
-                <div class="course-details">
-                    <div class="university">Tribhuvan University</div>
-                    <p>Focuses on IT systems, networking, and programming skills with applications in real-world environments.</p>
-                    <div class="note">*Also available for management students with math.</div>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Networking</li>
-                    <li>Web Development</li>
-                    <li>Project Management</li>
-                    <li>Software Engineering</li>
-                    <li>Cybersecurity</li>
-                    </ul>
-                </div>
-                </div>
-                           <div class="course-card">
-  <div class="course-name">BBIS</div>
-  <div class="course-details">
-    <div class="university">Kathmandu University</div>
-    <p>A 4-year combined degree in business and information systems management.</p>
-     <div class="note">*Also available for management students with math.</div>
-    <strong>Job Skills:</strong>
-    <ul>
-      <li>Systems Analysis</li>
-      <li>Information Strategy</li>
-      <li>Business Process Modeling</li>
-      <li>IT Consulting</li>
-      <li>Project Management</li>
-    </ul>
-  </div>
-</div>
-<div class="course-card">
-  <div class="course-name">BArch</div>
-  <div class="course-details">
-    <div class="university">Pokhara University</div>
-    <p>A 5-year professional degree in architectural design, planning, and construction.</p>
-     <div class="note">*Also available for management students with math.</div>
-    <strong>Job Skills:</strong>
-    <ul>
-      <li>Architectural Design</li>
-      <li>Urban Planning</li>
-      <li>Building Construction</li>
-      <li>Interior Design</li>
-      <li>Sustainable Design</li>
-    </ul>
-  </div>
-</div>
-            </div>
-            </div>
- 
+            </section>
 
-            <div class="stream-container">
-            <h2 class="stream-title">Management</h2>
-            <div class="course-grid">
-                <div class="course-card">
-                <div class="course-name">BIM</div>
-                <div class="course-details">
-                    <div class="university">Tribhuvan University</div>
-                    <p>Combines management principles with information technology to produce tech-savvy managers.</p>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Business Analysis</li>
-                    <li>Project Management</li>
-                    <li>System Design</li>
-                    <li>E-commerce</li>
-                    <li>IT Management</li>
-                    </ul>
+            <!-- Management Stream Section -->
+            <section id="management" class="stream-section">
+                <h2 class="stream-title management">Management Programs</h2>
+                <div class="course-grid">
+                    <!-- BIM -->
+                    <div class="course-card">
+                        <h3 class="course-name">BIM</h3>
+                        <p class="university-name">Tribhuvan University</p>
+                        <p class="course-description">Combines management principles with information technology to produce tech-savvy managers.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Business Analysis</li>
+                                <li>Project Management</li>
+                                <li>System Design</li>
+                                <li>E-commerce</li>
+                                <li>IT Management</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Business Communication, Principles of Management, Microeconomics, Computer Fundamentals</li>
+                                <li><strong>Year 2:</strong> Financial Accounting, Marketing, Database Management, Business Statistics</li>
+                                <li><strong>Year 3:</strong> Human Resource Management, Operations Management, Software Development, E-commerce</li>
+                                <li><strong>Year 4:</strong> Business Strategy, IT Project Management, Business Intelligence, Internship/Project</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+
+                    <!-- BCIS / BCSIT -->
+                    <div class="course-card">
+                        <h3 class="course-name">BCIS / BCSIT</h3>
+                        <p class="university-name">Pokhara University</p>
+                        <p class="course-description">Designed to bridge the gap between computer technology and business management.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Business Software Application</li>
+                                <li>IT Project Management</li>
+                                <li>MIS</li>
+                                <li>Data Analysis</li>
+                                <li>E-Commerce</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1 (Sem 1 & 2):</strong> English, Mathematics, Fundamentals of Computer Systems, Programming Language (Java)</li>
+                                <li><strong>Year 2 (Sem 3 & 4):</strong> Database Management System, Object-Oriented Analysis & Design, Internet Technology, Principles of Management, Computer Architecture</li>
+                                <li><strong>Year 3 (Sem 5 & 6):</strong> Operating Systems, Artificial Intelligence, Digital Marketing, Computer Graphics, Research Methods, Cloud Computing</li>
+                                <li><strong>Year 4 (Sem 7 & 8):</strong> Electives (e.g., Python Programming, Mobile Computing), Project Work, Internship</li>
+                            </ul>
+                        </div>
+                   
+                    </div>
+
+                    <!-- BBA -->
+                    <div class="course-card">
+                        <h3 class="course-name">BBA</h3>
+                        <p class="university-name">Tribhuvan University, Pokhara University, Purbanchal University, Kathmandu University</p>
+                        <p class="course-description">A 4-year course focused on developing managerial and administrative skills for business fields.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Business Communication</li>
+                                <li>Marketing</li>
+                                <li>Finance & Accounting</li>
+                                <li>Human Resource Management</li>
+                                <li>Entrepreneurship</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Principles of Management, Business Economics, Financial Accounting, Business Statistics</li>
+                                <li><strong>Year 2:</strong> Marketing Management, Human Resource Management, Operations Management, Business Law</li>
+                                <li><strong>Year 3:</strong> Financial Management, Entrepreneurship, Research Methodology, Organizational Behavior</li>
+                                <li><strong>Year 4:</strong> Strategic Management, International Business, Electives, Internship/Project</li>
+                            </ul>
+                        </div>
+                     </div>
+
+                    <!-- BBS -->
+                    <div class="course-card">
+                        <h3 class="course-name">BBS</h3>
+                        <p class="university-name">Tribhuvan University</p>
+                        <p class="course-description">A 4-year program centered on core business operations and commercial management.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Accounting</li>
+                                <li>Economics</li>
+                                <li>Business Law</li>
+                                <li>Taxation</li>
+                                <li>Organizational Management</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Business English, Microeconomics, Principles of Management, Accounting for Financial Analysis</li>
+                                <li><strong>Year 2:</strong> Macroeconomics, Business Law, Marketing Fundamentals, Cost and Management Accounting</li>
+                                <li><strong>Year 3:</strong> Financial Management, Human Resource Management, Business Research Methods, Taxation</li>
+                                <li><strong>Year 4:</strong> Entrepreneurship, Strategic Management, International Business, Project Work</li>
+                            </ul>
+                        </div>
+                      
+                    </div>
+
+                    <!-- BHM -->
+                    <div class="course-card">
+                        <h3 class="course-name">BHM</h3>
+                        <p class="university-name">Tribhuvan University, Pokhara University, Purbanchal University</p>
+                        <p class="course-description">A 4-year course on hospitality service, hotel management, and tourism operations.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Hotel Operations</li>
+                                <li>Food & Beverage Service</li>
+                                <li>Customer Relations</li>
+                                <li>Hospitality Accounting</li>
+                                <li>Tourism Services</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Hospitality Fundamentals, Culinary Arts, Food & Beverage Service, Communication Skills</li>
+                                <li><strong>Year 2:</strong> Accommodation Operations, Front Office Management, Hotel Accounting, Marketing for Hospitality</li>
+                                <li><strong>Year 3:</strong> Human Resource Management in Hospitality, Tourism Management, Entrepreneurship in Hospitality, Specialization Electives</li>
+                                <li><strong>Year 4:</strong> Strategic Management in Hospitality, Research Project, Internship</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+
+                    <!-- BBM -->
+                    <div class="course-card">
+                        <h3 class="course-name">BBM</h3>
+                        <p class="university-name">Tribhuvan University, Purbanchal University</p>
+                        <p class="course-description">A 4-year course in leadership, business strategies, and managerial operations.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Leadership</li>
+                                <li>Operations Management</li>
+                                <li>Strategic Planning</li>
+                                <li>Sales & Marketing</li>
+                                <li>Banking and Insurance</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Business Communication, Principles of Management, Microeconomics, Financial Accounting</li>
+                                <li><strong>Year 2:</strong> Marketing Management, Human Resource Management, Operations Management, Business Statistics</li>
+                                <li><strong>Year 3:</strong> Financial Management, Organizational Behavior, Business Research Methods, Entrepreneurship</li>
+                                <li><strong>Year 4:</strong> Strategic Management, International Business, Contemporary Management, Project Work</li>
+                            </ul>
+                        </div>
+                      
+                    </div>
                 </div>
+            </section>
+
+            <!-- Arts / Humanities Stream Section -->
+            <section id="humanities" class="stream-section">
+                <h2 class="stream-title arts-humanities">Arts / Humanities Programs</h2>
+                <div class="course-grid">
+                    <!-- BCA -->
+                    <div class="course-card">
+                        <h3 class="course-name">BCA</h3>
+                        <p class="university-name">Tribhuvan University (TU) & Pokhara University</p>
+                        <p class="course-description">This program is open to students from the Humanities stream who are interested in IT careers.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Programming</li>
+                                <li>Software Development</li>
+                                <li>Web Design</li>
+                                <li>IT Support</li>
+                                <li>Database Application</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Computer Fundamentals, Programming (C/C++), Mathematics, English</li>
+                                <li><strong>Year 2:</strong> Data Structures, Object-Oriented Programming, Database Management Systems, Web Technology</li>
+                                <li><strong>Year 3:</strong> Software Engineering, Networking, Operating Systems, E-commerce</li>
+                                <li><strong>Year 4:</strong> Artificial Intelligence, Mobile Application Development, Project Work, Internship</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+
+                    <!-- BEd -->
+                    <div class="course-card">
+                        <h3 class="course-name">BEd</h3>
+                        <p class="university-name">Tribhuvan University, Purbanchal University</p>
+                        <p class="course-description">A 4-year teacher training program with subject-specific options like English, ICT, and Science.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Teaching Techniques</li>
+                                <li>Curriculum Planning</li>
+                                <li>Classroom Management</li>
+                                <li>ICT in Education</li>
+                                <li>Evaluation Methods</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Educational Psychology, Philosophical Foundations of Education, General Pedagogy, Subject Content (e.g., English, Science, Math)</li>
+                                <li><strong>Year 2:</strong> Curriculum Development, Instructional Design, Classroom Management, Educational Technology (ICT in Education)</li>
+                                <li><strong>Year 3:</strong> Research in Education, Assessment & Evaluation, Special Education, Advanced Subject Content</li>
+                                <li><strong>Year 4:</strong> Teaching Practice/Internship, Thesis/Project Work, Contemporary Issues in Education</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+
+                    <!-- BTTM -->
+                    <div class="course-card">
+                        <h3 class="course-name">BTTM</h3>
+                        <p class="university-name">Tribhuvan University, Pokhara University</p>
+                        <p class="course-description">A 4-year program in travel business, tourism policy, and tour operations.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Tour Management</li>
+                                <li>Ticketing & Reservation</li>
+                                <li>Travel Agency Work</li>
+                                <li>Tourism Marketing</li>
+                                <li>Customer Service</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Fundamentals of Tourism, Geography of Tourism, Hospitality Basics, Business Communication</li>
+                                <li><strong>Year 2:</strong> Tour Operations, Ticketing & Reservations, Tourism Marketing, Sustainable Tourism</li>
+                                <li><strong>Year 3:</strong> Tourism Policy & Planning, Adventure Tourism, Event Management, Research Methodology</li>
+                                <li><strong>Year 4:</strong> International Tourism, Entrepreneurship in Tourism, Project Work, Internship</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <!-- BDes (Arts/Humanities) -->
+                    <div class="course-card">
+                        <h3 class="course-name">BDes</h3>
+                        <p class="university-name">Kathmandu University</p>
+                        <p class="course-description">A 4-year degree focused on design principles, craft-making, and creative entrepreneurship.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Product Design</li>
+                                <li>Handicraft Techniques</li>
+                                <li>Design Thinking</li>
+                                <li>Creative Entrepreneurship</li>
+                                <li>Visual Communication</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Fundamentals of Design, Drawing & Sketching, Color Theory, History of Art & Design</li>
+                                <li><strong>Year 2:</strong> Product Design, Textile Design, Graphic Design, Material Exploration, Design Software</li>
+                                <li><strong>Year 3:</strong> Design Thinking, User Experience (UX) Design, Craft Techniques, Design Research</li>
+                                <li><strong>Year 4:</strong> Creative Entrepreneurship, Portfolio Development, Design Project, Internship</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+
+                    <!-- BDevS -->
+                    <div class="course-card">
+                        <h3 class="course-name">BDevS</h3>
+                        <p class="university-name">Pokhara University</p>
+                        <p class="course-description">A 4-year interdisciplinary program focused on social, economic, and community development.</p>
+                        <div class="job-skills">
+                            <h4 class="section-heading">Job Skills:</h4>
+                            <ul>
+                                <li>Community Planning</li>
+                                <li>Project Implementation</li>
+                                <li>Policy Analysis</li>
+                                <li>Social Research</li>
+                                <li>Development Communication</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure">
+                            <h4 class="section-heading">Course Structure (Year-wise):</h4>
+                            <ul>
+                                <li><strong>Year 1:</strong> Introduction to Development Studies, Sociology, Economics, Research Methods</li>
+                                <li><strong>Year 2:</strong> Rural Development, Urban Planning, Environmental Studies, Statistics for Development</li>
+                                <li><strong>Year 3:</strong> Project Planning & Management, Policy Analysis, Social Mobilization, Gender & Development</li>
+                                <li><strong>Year 4:</strong> Development Communication, Community Development, Internship/Fieldwork, Thesis/Project</li>
+                            </ul>
+                        </div>
+                      
+                    </div>
                 </div>
-                <div class="course-card">
-                <div class="course-name">BCIS / BCSIT</div>
-                <div class="course-details">
-                    <div class="university">Pokhara University</div>
-                    <p>Designed to bridge the gap between computer technology and business management.</p>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Business Software Application</li>
-                    <li>IT Project Management</li>
-                    <li>MIS</li>
-                    <li>Data Analysis</li>
-                    <li>E-Commerce</li>
-                    </ul>
+            </section>
+
+            <!-- Entrance Preparation Section -->
+            <section id="entrance" class="stream-section">
+                <h2 class="stream-title entrance">Entrance Preparation Support</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <p class="course-description">Before starting your academic journey, many courses require you to pass an entrance exam. We are here to guide and support you in cracking them successfully!</p>
+                        <h4 class="section-heading">We help you prepare for:</h4>
+                        <ul>
+                            <li><strong>KUMAT</strong><br>For KU Business & IT programs</li>
+                            <li><strong>PU Entrance</strong><br>For PU-based courses like BCA, BCSIT, BDevS, BBA etc.</li>
+                            <li><strong>Aptitude Test</strong><br>For BDes, BArch (Design and Architecture courses)</li>
+                        </ul>
+                    </div>
+                    <div class="course-card">
+                        <h4 class="section-heading">We help you prepare for:</h4>
+                        <ul>
+                            <li><strong>IOE Entrance</strong><br>For BE Computer (Tribhuvan University, Engineering)</li>
+                            <li><strong>IOST Entrance</strong><br>For BSC CSIT (Science and IT programs under TU)</li>
+                            <li><strong>CMAT</strong><br>For BBA, BIM, BBM, BHM, BCIS (Management and IT under TU/PU)</li>
+                        </ul>
+                        <p class="course-description" style="margin-top: 1rem;">Join our dedicated entrance preparation modules, mock tests, and expert mentoring to increase your success rate.</p>
+                    </div>
                 </div>
-                </div>
-                <div class="course-card">
-    <div class="course-name">BBA</div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University, Pokhara University, Purbanchal University, Kathmandu University</div>
-        <p>A 4-year course focused on developing managerial and administrative skills for business fields.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Business Communication</li>
-            <li>Marketing</li>
-            <li>Finance & Accounting</li>
-            <li>Human Resource Management</li>
-            <li>Entrepreneurship</li>
-        </ul>
-    </div>
-</div>
-
-            <div class="course-card">
-    <div class="course-name">BBS</div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University</div>
-        <p>A 4-year program centered on core business operations and commercial management.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Accounting</li>
-            <li>Economics</li>
-            <li>Business Law</li>
-            <li>Taxation</li>
-            <li>Organizational Management</li>
-        </ul>
-    </div>
-</div>
-
-<div class="course-card">
-    <div class="course-name">BHM</div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University, Pokhara University, Purbanchal University</div>
-        <p>A 4-year course on hospitality service, hotel management, and tourism operations.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Hotel Operations</li>
-            <li>Food & Beverage Service</li>
-            <li>Customer Relations</li>
-            <li>Hospitality Accounting</li>
-            <li>Tourism Services</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name">BBM </div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University, Purbanchal University</div>
-        <p>A 4-year course in leadership, business strategies, and managerial operations.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Leadership</li>
-            <li>Operations Management</li>
-            <li>Strategic Planning</li>
-            <li>Sales & Marketing</li>
-            <li>Banking and Insurance</li>
-        </ul>
-    </div>
-</div>
-            </div>
-            </div>
-
-            <div class="stream-container">
-            <h2 class="stream-title">Arts / Humanities</h2>
-            <div class="course-grid">
-                <div class="course-card">
-                <div class="course-name">BCA</div>
-                <div class="course-details">
-                    <div class="university">Tribhuvan University (TU) & Pokhara University</div>
-                    <p>This program is open to students from the Humanities stream who are interested in IT careers.</p>
-                    <strong>Job Skills:</strong>
-                    <ul>
-                    <li>Programming</li>
-                    <li>Software Development</li>
-                    <li>Web Design</li>
-                    <li>IT Support</li>
-                    <li>Database Application</li>
-                    </ul>
-                </div>
-                </div>
-
-                <div class="course-card">
-    <div class="course-name">BEd</div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University, Purbanchal University</div>
-        <p>A 4-year teacher training program with subject-specific options like English, ICT, and Science.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Teaching Techniques</li>
-            <li>Curriculum Planning</li>
-            <li>Classroom Management</li>
-            <li>ICT in Education</li>
-            <li>Evaluation Methods</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-    <div class="course-name">BTTM</div>
-    <div class="course-details">
-        <div class="university">Tribhuvan University, Pokhara University</div>
-        <p>A 4-year program in travel business, tourism policy, and tour operations.</p>
-        <strong>Job Skills:</strong>
-        <ul>
-            <li>Tour Management</li>
-            <li>Ticketing & Reservation</li>
-            <li>Travel Agency Work</li>
-            <li>Tourism Marketing</li>
-            <li>Customer Service</li>
-        </ul>
-    </div>
-</div>
-<div class="course-card">
-  <div class="course-name">BDes</div>
-  <div class="course-details">
-    <div class="university">Kathmandu University</div>
-    <p>A 4-year degree focused on design principles, craft-making, and creative entrepreneurship.</p>
-    <strong>Job Skills:</strong>
-    <ul>
-      <li>Product Design</li>
-      <li>Handicraft Techniques</li>
-      <li>Design Thinking</li>
-      <li>Creative Entrepreneurship</li>
-      <li>Visual Communication</li>
-    </ul>
-  </div>
-</div>
-<div class="course-card">
-  <div class="course-name">BDevS</div>
-  <div class="course-details">
-    <div class="university">Pokhara University</div>
-    <p>A 4-year interdisciplinary program focused on social, economic, and community development.</p>
-    <strong>Job Skills:</strong>
-    <ul>
-      <li>Community Planning</li>
-      <li>Project Implementation</li>
-      <li>Policy Analysis</li>
-      <li>Social Research</li>
-      <li>Development Communication</li>
-    </ul>
-  </div>
-</div>
-<div class="course-card">
-  <div class="course-name">BDes</div>
-  <div class="course-details">
-    <div class="university">Kathmandu University</div>
-    <p>A 4-year degree focused on design principles, craft-making, and creative entrepreneurship.</p>
-    <strong>Job Skills:</strong>
-    <ul>
-      <li>Product Design</li>
-      <li>Handicraft Techniques</li>
-      <li>Design Thinking</li>
-      <li>Creative Entrepreneurship</li>
-      <li>Visual Communication</li>
-    </ul>
-  </div>
+            </section>
+        </main>
 </div>
 
 
-            </div>
-            </div>
-            <h1>Entrance Preparation</h1>
-
-            <div class="course-grid">
-                <div class="course-card">
-  <div class="course-name">Entrance Preparation Support</div>
-  <div class="course-details">
-    <p>Before starting your academic journey, many courses require you to pass an entrance exam. We are here to guide and support you in cracking them successfully!</p>
-    <strong>We help you prepare for:</strong>
-    <ul>
-                                      
-      <li><strong>KUMAT</strong><br>For KU Business & IT programs</li>
-      <li><strong>PU Entrance</strong><br>For PU-based courses like BCA, BCSIT, BDevS, BBA etc.</li>
-      <li><strong>Aptitude Test</strong><br>For BDes, BArch (Design and Architecture courses)</li>
-    </ul>
-  </div>
-</div>
-                <div class="course-card">
-  <div class="course-name">Entrance Preparation Support</div>
-  <div class="course-details">
-
-    <strong>We help you prepare for:</strong>
-    <ul>
-      <li><strong>IOE Entrance</strong><br>For BE Computer (Tribhuvan University, Engineering)</li>
-      <li><strong>IOST Entrance</strong> <br>For BSc CSIT (Science and IT programs under TU)</li>
-      <li><strong>CMAT</strong><br> For BBA, BIM, BBM, BHM, BCIS (Management and IT under TU/PU)</li>
-    
-    </ul>
-    <p>✨ Join our dedicated entrance preparation modules, mock tests, and expert mentoring to increase your success rate.</p>
-  </div>
-</div>
 
 
-            </div>
-            <br><br>
-        
-        </section>
+
+
+
+
+
+
+
 
 
         <footer class="site-footer">
@@ -552,7 +564,7 @@
                 </div>
         </div>
     </footer>
-
-    <script src="web/src/script.js"></script>
+    <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
