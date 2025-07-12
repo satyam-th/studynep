@@ -162,7 +162,10 @@ hr {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
-
+ .explore-button {
+        gap: 1rem;
+        margin: 4px;
+    }
 
 
 /* Section 2 */
