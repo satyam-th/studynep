@@ -1,4 +1,4 @@
-// When the stream changes, update sub-stream options
+// Update sub-stream when stream changes
 document.getElementById('stream').onchange = function () {
     var substream = document.getElementById('sub-stream');
     var selected = this.value;
@@ -8,49 +8,48 @@ document.getElementById('stream').onchange = function () {
         options = ['Bio', 'Computer'];
     } else if (selected === 'management') {
         options = [
-            'H.M. without math',
-            'Computer with math',
-            'Computer without math',
-            'H.M with math',
-            'Business with math',
-            'Business without math'
+            'Hotel Mgmt (no math)',
+            'Computer (with math)',
+            'Computer (no math)',
+            'Hotel Mgmt (with math)',
+            'Business (with math)',
+            'Business (no math)'
         ];
     }
 
-    // Clear old options and add new ones
-    substream.innerHTML = '<option value="">--- sub stream ---</option>';
-    for (var i = 0; i < options.length; i++) {
-        var opt = document.createElement('option');
-        opt.value = options[i];
-        opt.textContent = options[i];
-        substream.appendChild(opt);
-    }
+    substream.innerHTML = '<option value="">--- select sub-stream ---</option>';
+    options.forEach(function (opt) {
+        var option = document.createElement('option');
+        option.value = opt;
+        option.textContent = opt;
+        substream.appendChild(option);
+    });
 };
 
-// When the interest changes, update department options
+// Update department when interest changes
 document.getElementById('interest').onchange = function () {
     var department = document.getElementById('department');
     var selected = this.value;
     var options = [];
 
     if (selected === 'technology') {
-        options = ['AI', 'Web Development', 'Hardware', 'Software Engineering', 'Data Science', 'Cyber Security'];
+        options = ['AI', 'Web', 'Hardware', 'Software', 'Data', 'Cyber'];
     } else if (selected === 'medicine') {
-        options = ['Cardiology', 'Neurology', 'Pediatrics'];
+        options = ['MBBS', 'Nursing', 'Pharmacy'];
     } else if (selected === 'business') {
-        options = ['Marketing', 'Finance', 'HR', 'Entrepreneurship', 'Accounting'];
+        options = ['Marketing', 'Finance', 'HR', 'Entrepreneur', 'Accounting'];
     }
 
-    department.innerHTML = '<option value="">--- department ---</option>';
-    for (var i = 0; i < options.length; i++) {
-        var opt = document.createElement('option');
-        opt.value = options[i];
-        opt.textContent = options[i];
-        department.appendChild(opt);
-    }
+    department.innerHTML = '<option value="">--- select department ---</option>';
+    options.forEach(function (opt) {
+        var option = document.createElement('option');
+        option.value = opt;
+        option.textContent = opt;
+        department.appendChild(option);
+    });
 };
 
-// Suggestions
+// Show suggestions
 document.getElementById('courseForm').onsubmit = function (e) {
     e.preventDefault();
 
@@ -59,69 +58,60 @@ document.getElementById('courseForm').onsubmit = function (e) {
     var subStream = document.getElementById('sub-stream').value.toLowerCase();
     var gpa = parseFloat(document.getElementById('gpa').value);
     var interest = document.getElementById('interest').value;
-    var dept = document.getElementById('department').value;
 
-    var suggestion = "";
     var error = "";
+    var suggestions = [];
 
-    //  Science-Bio students can apply for medicine
     if (interest === "medicine" && !(stream === "science" && subStream === "bio")) {
-        error = "Sorry, only Science-Bio students can apply for medical fields.";
+        error = "Only Science-Bio students can apply for medicine.";
     }
 
-    // Suggest courses based on stream and interest
-    var uniSuggestions = [];
     if (!error) {
         if (stream === "science" && subStream === "bio" && interest === "medicine") {
             if (gpa >= 3.6) {
-                uniSuggestions.push("TU: MBBS, BDS, BSc Nursing");
-                uniSuggestions.push("KU: MBBS, BSc Nursing");
+                suggestions.push("National: MBBS, BDS, BSc Nursing (TU, KU, PU)");
             } else {
-                uniSuggestions.push("TU/PU: BPH, BMLT, BPharma");
+                suggestions.push("National: BPH, BMLT, Pharmacy (TU, PU)");
             }
         } else if (stream === "science" && interest === "technology") {
-            uniSuggestions.push("TU: BSc CSIT, BIT");
-            uniSuggestions.push("KU: BTech in CS, BCA");
+            suggestions.push("National: BSc CSIT, BIT, BCA (TU, KU, PU)");
+            suggestions.push("Foreign-affiliated: BSc Computing (Islington, Softwarica)");
         } else if (stream === "management" && interest === "business") {
-            uniSuggestions.push("TU: BBA, BBS");
-            uniSuggestions.push("KU: BBA");
+            suggestions.push("National: BBA, BBS, BHM (TU, KU, PU)");
+            suggestions.push("Foreign-affiliated: BBA (British College, NAMI)");
         } else if (stream === "management" && interest === "technology") {
-            if (subStream.indexOf("math") !== -1) {
-                uniSuggestions.push("TU: BCA, BIM");
-                uniSuggestions.push("PU: BCA, BIT");
+            if (subStream.includes("math")) {
+                suggestions.push("National: BIM, BCA, BIT (TU, PU)");
+                suggestions.push("Foreign-affiliated: BSc IT (LBEF, Herald)");
             } else {
-                uniSuggestions.push("TU: BCA");
-                uniSuggestions.push("PU: BCA");
+                suggestions.push("National: BCA (TU, PU)");
+                suggestions.push("Foreign-affiliated: Web Design, IT (Softwarica, Informatics)");
             }
         } else if (stream === "humanities") {
             if (interest === "technology") {
-                uniSuggestions.push("TU: BCA");
-                uniSuggestions.push("PU: BCA, Web Design");
+                suggestions.push("National: BCA (TU, PU)");
+                suggestions.push("Foreign-affiliated: BSc Computing (Islington, IIMS)");
             } else if (interest === "business") {
-                uniSuggestions.push("TU: BBS, BBM");
-                uniSuggestions.push("PU: BBA, BHM");
+                suggestions.push("National: BBS, BBM, BBA (TU, PU)");
+                suggestions.push("Foreign-affiliated: BBA (British College)");
             } else if (interest === "humanities") {
-                uniSuggestions.push("TU: BA, BSW");
-                uniSuggestions.push("PU: BA Rural Development, BSW");
+                suggestions.push("National: BA, BSW (TU, PU)");
             } else if (interest === "medicine") {
-                error = "Sorry, Humanities students cannot apply for medical fields.";
+                error = "Humanities students cannot apply for medicine.";
             }
         }
     }
 
-    // Show suggestions or error
+    // Display results
     if (error) {
         document.getElementById('suggestion-n').innerHTML = error;
-        document.getElementById('suggestion-c').innerHTML = "";
-        document.getElementById('suggestion-l').innerHTML = "";
     } else {
-        suggestion = "Hello " + name + ", here are some university options:<br><ul>";
-        for (var i = 0; i < uniSuggestions.length; i++) {
-            suggestion += "<li>" + uniSuggestions[i] + "</li>";
-        }
-        suggestion += "</ul>";
-        document.getElementById('suggestion-n').innerHTML = suggestion;
-        document.getElementById('suggestion-c').innerHTML = "";
-        document.getElementById('suggestion-l').innerHTML = "You can also take our skill-based courses like Python, Web Design, etc.";
+        let html = " Hello <b>" + name + "</b>, here are some course options:<ul>";
+        suggestions.forEach(s => html += "<li>" + s + "</li>");
+        html += "</ul>";
+        document.getElementById('suggestion-n').innerHTML = html;
     }
+
+    document.getElementById('suggestion-c').innerHTML = "";
+    document.getElementById('suggestion-l').innerHTML = "We teach: You can also learn short courses like Python, Web Design, and AI.";
 };
