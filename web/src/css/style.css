@@ -100,7 +100,7 @@ hr {
 
 /* Main Section */
 .main-section {
-    margin-top: 70px;
+    margin-top: 40px;
     min-height: 100vh;
     display: flex;
 }
@@ -444,7 +444,7 @@ hr {
 /* Slider styles */
 .homepage-slider {
     width: 100%;
-    height: 100vh; /* Set a fixed height for the slider */
+    height: 90vh; /* Set a fixed height for the slider */
     position: relative;
     overflow: hidden;
 }
