@@ -148,7 +148,6 @@ if (meetingBookingForm) {
             <strong>Meeting booked!</strong><br>
             <b>Date:</b> ${bookingData.meetingDate}<br>
             <b>Time:</b> ${bookingData.meetingTime}<br>
-            <b>Name:</b> ${bookingData.fullname || ''}<br>
             <span>We will contact you soon.</span>
         `;
 
@@ -159,5 +158,21 @@ if (meetingBookingForm) {
         meetingBookingForm.parentNode.insertBefore(confirmation, meetingBookingForm.nextSibling);
 
         meetingBookingForm.reset();
+
+        // --- Login for meeting confirmation ---
+        // Show login prompt if not logged in 
+        if (!localStorage.getItem('userLoggedIn')) {
+            const loginDiv = document.createElement('div');
+            loginDiv.style.background = "#fff3cd";
+            loginDiv.style.border = "1px solid #ffeeba";
+            loginDiv.style.padding = "12px";
+            loginDiv.style.marginTop = "8px";
+            loginDiv.style.borderRadius = "6px";
+            loginDiv.innerHTML = `
+            <strong>Login Required</strong><br>
+            Please <a href="login.html">login</a> to confirm your meeting booking.
+            `;
+            confirmation.appendChild(loginDiv);
+        }
     });
 }

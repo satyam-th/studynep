@@ -28,6 +28,7 @@
         </nav>
     </header>
 
+  
     <!-- Main Content Section -->
     <main class="container">
         <h2 class="main-title">Our Comprehensive Courses</h2>
@@ -51,7 +52,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                      <button class="enroll-btn" data-course-name="Python Programming" data-course-price="65000">Enroll Now</button>
                 </div>
 
                 <!-- Basic Computer Training Course Card -->
@@ -70,7 +71,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                <button class="enroll-btn" data-course-name="Basic Computer Training" data-course-price="25000">Enroll Now</button>
                 </div>
 
                 <!-- Web Design Course Card -->
@@ -89,7 +90,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Web Design" data-course-price="45000">Enroll Now</button>
                 </div>
 
                 <!-- C Programming Course Card -->
@@ -108,7 +109,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="C Programming" data-course-price="30000">Enroll Now</button>
                 </div>
 
                 <!-- C++ Programming Course Card -->
@@ -127,7 +128,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="C++ Programming" data-course-price="35000">Enroll Now</button>
                 </div>
 
                 <!-- DSA Course Card -->
@@ -146,7 +147,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="DSA" data-course-price="40000">Enroll Now</button>
                 </div>
 
                 <!-- Networking Course Card -->
@@ -165,7 +166,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Networking" data-course-price="30000">Enroll Now</button>
                 </div>
 
                 <!-- Computer Fundamentals Course Card -->
@@ -184,7 +185,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Computer Fundamentals" data-course-price="25000">Enroll Now</button>
                 </div>
 
                 <!-- Web Hosting Course Card -->
@@ -203,7 +204,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Web Hosting" data-course-price="40000">Enroll Now</button>
                 </div>
 
                 <!-- Cybersecurity Basics -->
@@ -222,7 +223,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Cybersecurity Basics" data-course-price="30000">Enroll Now</button>
                 </div>
 
 
@@ -242,7 +243,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Graphic Design" data-course-price="45000">Enroll Now</button>
                 </div>
 
                 <!--Digital Marketing -->
@@ -261,13 +262,44 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="#" class="enroll-btn">Enroll</a>
+                    <button class="enroll-btn" data-course-name="Digital Marketing" data-course-price="50000">Enroll Now</button>
                 </div>
 
             </div>
         </section>
     </main>
 
+
+
+
+<div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closePaymentModal">&times;</span>
+            <h2>Confirm Your Enrollment</h2>
+            <div class="payment-details-summary">
+                <p>You are enrolling in:</p>
+                <h3><span id="paymentCourseName"></span></h3>
+                <p>Total Amount: <span class="currency">NPR</span> <span id="paymentCoursePrice"></span></p>
+            </div>
+            <form id="paymentForm">
+                <input type="hidden" id="hiddenPaymentCourseName" name="courseName">
+                <input type="hidden" id="hiddenPaymentCoursePrice" name="coursePrice">
+                
+                <p class="payment-instruction">By clicking "Confirm Payment", you agree to our terms and conditions. This is a simulated payment.</p>
+
+                <button type="submit" class="confirm-payment-btn">Confirm Payment</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
        <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-about">
@@ -299,6 +331,60 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
+
     <script src="src/js/script.js"></script>
+    <script>
+addEventListener("DOMContentLoaded", function() {
+    const enrollButtons = document.querySelectorAll('.enroll-btn');
+    const paymentModal = document.getElementById('paymentModal');
+    const closeButton = document.getElementById('closePaymentModal');
+    const paymentCourseName = document.getElementById('paymentCourseName');
+    const paymentCoursePrice = document.getElementById('paymentCoursePrice');
+    const hiddenPaymentCourseName = document.getElementById('hiddenPaymentCourseName');
+    const hiddenPaymentCoursePrice = document.getElementById('hiddenPaymentCoursePrice');
+    const paymentForm = document.getElementById('paymentForm');
+    const confirmPaymentButton = document.querySelector('.confirm-payment-btn');
+    const currencySymbol = document.querySelector('.currency');
+    const currency = 'NPR'; // Set the currency symbol
+    currencySymbol.textContent = currency;
+
+    enrollButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const courseName = this.getAttribute('data-course-name');
+            const coursePrice = this.getAttribute('data-course-price');
+
+            paymentCourseName.textContent = courseName;
+            paymentCoursePrice.textContent = coursePrice;
+            hiddenPaymentCourseName.value = courseName;
+            hiddenPaymentCoursePrice.value = coursePrice;
+
+            paymentModal.style.display = 'block';
+        });
+    });
+    closeButton.addEventListener('click', function() {
+        paymentModal.style.display = 'none';
+    });
+    window.addEventListener('click', function(event) {
+        if (event.target === paymentModal) {
+            paymentModal.style.display = 'none';
+        }
+    });
+    paymentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const courseName = hiddenPaymentCourseName.value;
+        const coursePrice = hiddenPaymentCoursePrice.value;
+
+        // Simulate payment confirmation
+        alert(`login to confirm payment for ${courseName} of amount ${currency} ${coursePrice}`);
+          window.location.href = "login.html"; // Redirect to login page
+        // Close the modal
+        paymentModal.style.display = 'none';
+    });
+    confirmPaymentButton.addEventListener('click', function() {
+        paymentForm.submit();
+    });
+    });
+
+    </script>
 </body>
 </html>
