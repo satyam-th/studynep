@@ -53,7 +53,7 @@
                             <li><strong>Estimated Price:</strong> NPR 2,394,000 - 3,325,000 per year</li>
                             <li><strong>College:</strong> ACE SCHOOL (Partner Institution)</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                        <button class="apply-btn" data-program="BBA/MBA (Scotland) at Ace International">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -82,7 +82,7 @@
                             <li><strong>Estimated Price:</strong> NPR 1,995,000 - 2,926,000 per year</li>
                             <li><strong>College:</strong> British International Distance College</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                         <button class="apply-btn" data-program="BSc(hons)/MSc at British International College">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -111,7 +111,7 @@
                             <li><strong>Estimated Price:</strong> NPR 1,330,000 - 2,128,000 per year</li>
                             <li><strong>College:</strong> Institute of Management</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                         <button class="apply-btn" data-program="BBA/MBA/IT at CG Institute of Management">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -140,7 +140,7 @@
                             <li><strong>Estimated Price:</strong> NPR 2,128,000 - 3,192,000 per year</li>
                             <li><strong>College:</strong> Silver Mountain School of Hotel Management</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                        <button class="apply-btn" data-program="Hospitality/Art at Silver Mountain">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -169,7 +169,7 @@
                             <li><strong>Estimated Price:</strong> NPR 1,197,000 - 1,995,000 per year</li>
                             <li><strong>College:</strong> Mid-Valley International College</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                 <button class="apply-btn" data-program="Account/Finance at Mid-Valley">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -198,7 +198,7 @@
                             <li><strong>Estimated Price:</strong> NPR 1,064,000 - 1,862,000 per year</li>
                             <li><strong>College:</strong> KCM</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+             <button class="apply-btn" data-program="BBA/MBA at KCM">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -227,7 +227,7 @@
                             <li><strong>Estimated Price:</strong> NPR 2,660,000 - 3,990,000 per year</li>
                             <li><strong>College:</strong> King's College</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                         <button class="learn-more-button" data-program="Business/IT at King's College">Apply Now</button>
                     </div>
                 </div>
             </section>
@@ -256,13 +256,39 @@
                             <li><strong>Estimated Price:</strong> NPR 1,463,000 - 2,394,000 per year</li>
                             <li><strong>College:</strong> IEC College of Art & Fashion</li>
                         </ul>
-                        <a href="#" class="learn-more-button">Apply for this</a>
+                       <button class="apply-btn" data-program="Fashion/Interior at IEC College">Apply Now</button>
+ 
                     </div>
                 </div>
             </section>
 
         </div>
     </main>
+
+    <!-- form -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Apply for Program: <span id="modalProgramName"></span></h2>
+            <form id="applicationForm">
+                <input type="hidden" id="appliedProgram" name="appliedProgram">
+                
+                <label for="applyName">Full Name:</label>
+                <input type="text" id="applyName" name="fullName" required>
+
+                <label for="applyEmail">Email:</label>
+                <input type="email" id="applyEmail" name="email" required>
+
+                <label for="applyPhone">Phone Number:</label>
+                <input type="tel" id="applyPhone" name="phoneNumber" pattern="[0-9]{10}" placeholder="e.g., 98XXXXXXXX" required>
+
+                <label for="applyMessage">Your Message (optional):</label>
+                <textarea id="applyMessage" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
 
        <footer class="site-footer">
         <div class="footer-container">
@@ -296,3 +322,39 @@
     </footer>
     <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
     <script src="/studynep/web/src/js/script.js"></script>
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("applyModal");
+        const closeButton = document.querySelector(".close-button");
+        const applyButtons = document.querySelectorAll(".apply-btn");
+        const modalProgramName = document.getElementById("modalProgramName");
+        const appliedProgramInput = document.getElementById("appliedProgram");
+
+        applyButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalProgramName.textContent = this.dataset.program;
+                appliedProgramInput.value = this.dataset.program;
+            });
+        });
+
+        closeButton.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Form submission
+        document.getElementById("applicationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Application submitted successfully!");
+            modal.style.display = "none";
+            this.reset();
+        });
+    </script>
+</body> 
+</html>

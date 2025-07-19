@@ -494,7 +494,7 @@
 
             <!-- Entrance Preparation Section -->
             <section id="entrance" class="stream-section">
-                <h2 class="stream-title entrance">Entrance Preparation Support</h2>
+                <h2 class="stream-title entrance">Entrance Preparation Support  <button class="apply-btn" data-program="Entrance Preparation">Book your sit for preparation with us</button></h2>
                 <div class="course-grid">
                     <div class="course-card">
                         <p class="course-description">Before starting your academic journey, many courses require you to pass an entrance exam. We are here to guide and support you in cracking them successfully!</p>
@@ -522,7 +522,44 @@
 
 
 
+   <!-- form -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Entrance Preparation Support for: <span id="modalProgramName"></span></h2>
+            <form id="applicationForm">
+                <input type="hidden" id="appliedProgram" name="appliedProgram">
+                <label for="applyName">Full Name:</label>
+                <input type="text" id="applyName" name="fullName" required>
 
+                <label for="applyEmail">Email:</label>
+                <input type="email" id="applyEmail" name="email" required>
+
+                <label for="applyPhone">Phone Number:</label>
+                <input type="tel" id="applyPhone" name="phoneNumber" pattern="[0-9]{10}" placeholder="e.g., 98XXXXXXXX" required>
+
+                <label for="applyCollege">Preferred College:</label>
+                <input type="text" id="applyCollege" name="college" required>
+                <label for="applyGender">Gender:</label>
+                <select id="applyGender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="takeclassby">Take Class By:</label>
+                <select id="takeclassby" name="takeclassby" required>
+                    <option value="">Select Option</option>
+                    <option value="online">Online(google meet)</option>
+                    <option value="offline">Physical</option>
+                </select>
+                <label for="applyMessage">Your Message (optional):</label>
+                <textarea id="applyMessage" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -567,5 +604,40 @@
     </footer>
     <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
+    <script>
+     // Modal functionality
+        const modal = document.getElementById("applyModal");
+        const closeButton = document.querySelector(".close-button");
+        const applyButtons = document.querySelectorAll(".apply-btn");
+        const modalProgramName = document.getElementById("modalProgramName");
+        const appliedProgramInput = document.getElementById("appliedProgram");
+
+        applyButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalProgramName.textContent = this.dataset.program;
+                appliedProgramInput.value = this.dataset.program;
+            });
+        });
+
+        closeButton.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Form submission
+        document.getElementById("applicationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "Blog.html";
+            alert("login or signup to book your session");
+            modal.style.display = "none";
+            this.reset();
+        });
+    </script>
 </body>
 </html>

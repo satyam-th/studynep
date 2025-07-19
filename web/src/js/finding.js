@@ -115,3 +115,49 @@ document.getElementById('courseForm').onsubmit = function (e) {
     document.getElementById('suggestion-c').innerHTML = "";
     document.getElementById('suggestion-l').innerHTML = "We teach: You can also learn short courses like Python, Web Design, and AI.";
 };
+
+
+
+// --- jQuery UI Datepicker Initialization ---
+$(function () {
+    $("#meetingDate").datepicker({
+        dateFormat: "yy-mm-dd",
+        minDate: 0, // Disable past dates
+   
+    });
+});
+
+// --- Meeting Booking Form Submission Handler ---
+const meetingBookingForm = document.getElementById('meetingBookingForm');
+
+if (meetingBookingForm) {
+    meetingBookingForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(meetingBookingForm);
+        const bookingData = Object.fromEntries(formData.entries());
+
+        // Display a styled confirmation message
+        const confirmation = document.createElement('div');
+        confirmation.style.background = "#00df00ff";
+        confirmation.style.border = "1px solid #000000ff";
+        confirmation.style.padding = "16px";
+        confirmation.style.marginTop = "12px";
+        confirmation.style.borderRadius = "6px";
+        confirmation.innerHTML = `
+            <strong>Meeting booked!</strong><br>
+            <b>Date:</b> ${bookingData.meetingDate}<br>
+            <b>Time:</b> ${bookingData.meetingTime}<br>
+            <b>Name:</b> ${bookingData.fullname || ''}<br>
+            <span>We will contact you soon.</span>
+        `;
+
+        // Remove any previous confirmation
+        const prev = document.getElementById('meeting-confirmation');
+        if (prev) prev.remove();
+        confirmation.id = 'meeting-confirmation';
+        meetingBookingForm.parentNode.insertBefore(confirmation, meetingBookingForm.nextSibling);
+
+        meetingBookingForm.reset();
+    });
+}
