@@ -37,22 +37,6 @@ form textarea {
   resize: none;
 }
 
-button {
-  margin-top: 20px;
-  padding: 12px 30px;
-  font-size: 1.2rem;
-  background-color: #00cc33;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #009e28;
-}
-
 .result-section {
   flex: 1;
   background: #dcdcdc;

@@ -232,3 +232,15 @@ p
         font-size: 1em;
     }
 }
+.explore-button {
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 1rem;
+    margin: 4px;
+}

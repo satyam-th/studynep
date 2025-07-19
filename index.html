@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyNep</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="web/src/css/style.css">
-   
-</head>
+    <link rel="stylesheet" href="web/src/css/styleh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    </head>
 <body>
-    <header>
+ <header>
         <nav class="navbar">
             <a href="#home" class="logo-link">
-                <img src="img/logo.png" alt="StudyNep" class="logo-img">
+                <img src="/studynep/img/logo.png" alt="StudyNep" class="logo-img">
             </a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-menu">
                 <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="web/course.html"><i class="fas fa-book"></i> Courses</a></li>
                 <li><a href="web/find-course.html"><i class="fas fa-search"></i> Find Course</a></li>
-                <li><a href="web/our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a  href="web/our-courses.html"><i class="fas fa-book-open"></i> Our Courses</a></li>
+                <li><a href="web/Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
                 <li><a href="web/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
                 <li><a class="login" href="web/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             </ul>
@@ -44,24 +46,60 @@
                         </div>
                         <a href="#main-section2" rel="down"><button class="explore-button">Explore</button></a>
                         <br><br>
-                              <a href="#national-universities" rel="down"><button class="explore-button">Nepalis Universities</button></a>
-                                       <a href="#foreign-colleges" rel="down"><button class="explore-button">Foreign Affiliated Colleges</button></a>
+                        <a href="#national-universities" rel="down"><button class="explore-button">Nepalis Universities</button></a>
+                        <a href="#foreign-colleges" rel="down"><button class="explore-button">Foreign Affiliated Colleges</button></a>
                     </div>
                 </div>
+
                 <div class="right-content">
-                    <img src="img/home.jpg" alt="home-img" class="homepage-img">
-                    <div class="text-rdown">
-                        <h1>MAKE YOUR DREAMS COME TRUE</h1>
-                    </div>
+                    <div class="homepage-slider">
+                        <div class="slide-item">
+                            <img src="img/home.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                    
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <img src="img/confuse.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                             
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <img src="img/check.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                                
+                            </div>
+                        </div>
+                          <div class="slide-item">
+                            <img src="img/confuse1.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                                
+                            </div>
+                        </div>
+                          <div class="slide-item">
+                            <img src="img/what-a.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                                
+                            </div>
+                        </div>
+                          <div class="slide-item">
+                            <img src="img/what-what-what.jpg" alt="slider-img" class="slider-img">
+                            <div class="slide-text-overlay">
+                                
+                            </div>
+                        </div>
+                        <button class="slide-prev">&#10094;</button> <button class="slide-next">&#10095;</button> </div>
+                         
                 </div>
-            </div>
+                </div>
         </section>
 
         <section id="main-section2">
             <div class="container2">
                 <h1>Don't <span style="color: #007BFF;">Waste</span> Your <span style="color: #DC3545;">Time</span> on a wrong course.</h1>
                 <p class="subtitle">So here we are now to guide you.</p>
-                 <hr style="border: 1px solid #000000;">
+                <hr style="border: 1px solid #000000;">
                 <div class="box">
                     <div class="column">
                         <h2>Why to choose the right course</h2>
@@ -87,7 +125,7 @@
             </div>
         </section>
 
-       <section id="national-universities" class="section3">
+        <section id="national-universities" class="section3">
             <h1 class="title"> Top National Universities in Nepal</h1>
             <p style="text-align: center;">Explore the leading universities in Nepal that offer a variety of programs to help you achieve your academic goals.</p>
             <hr style="border: 1px solid #000000;">
@@ -107,7 +145,7 @@
                     <img src="img/kuuni.jpeg" alt="Kathmandu University" class="uni-card-img">
                     <div class="uni-card-content">
                         <h3>Kathmandu University (KU)</h3>
-                        <p>Known for its strong engineering, medical, and management programs. It emphasizes research and innovation. </p>
+                        <p>Known for its strong engineering, medical, and management programs. It emphasizes research and innovation.</p>
                         <div class="uni-card-footer">
                             <span><i class="fas fa-calendar-alt"></i> Est: 1991 </span>
                             <span><i class="fas fa-map-marker-alt"></i> Dhulikhel, Kavre </span>
@@ -136,16 +174,16 @@
                         </div>
                     </div>
                 </div>
-                 </div>
+            </div>
         </section>
 
-        <section  id="foreign-colleges" class="foreign-colleges-section">
+        <section id="foreign-colleges" class="foreign-colleges-section">
             <h1 class="title">Foreign University-Affiliated Colleges in Nepal</h1>
-            <p class="subtitle">These colleges collaborate with universities from countries like the UK, Malaysia, Scotland, Australia, and Thailand, offering degrees in business, IT, hospitality, fashion, and more.  <a href="web/inside/home/Foreignunicolleges.html" rel="down"><button class="explore-button">Details</button></a></p>
+            <p class="subtitle">These colleges collaborate with universities from countries like the UK, Malaysia, Scotland, Australia, and Thailand, offering degrees in business, IT, hospitality, fashion, and more. <a href="web/inside/home/Foreignunicolleges.html" rel="down"><button class="explore-button">Details</button></a></p>
             <hr style="border: 1px solid #000000;">
             <div class="college-grid">
                 <div class="college-card">
-                <img src="img/ace-i.jpeg" alt="Ace International Business School Logo">
+                    <img src="img/ace-i.jpeg" alt="Ace International Business School Logo">
                     <h4>BBA, MBA (SCOTLAND)</h4>
                     <p>Glasgow Caledonian University, Scotland</p>
                 </div>
@@ -209,16 +247,18 @@
                 <p><i class="fas fa-phone"></i> +977 98xxxxxx</p>
                 <p><i class="fas fa-envelope"></i> info@studynep.com</p>
             </div>
-             <div class="social-media">
-                   <h3>Follow Us</h3>
-                    <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
-                    <a href="#">Twitter<i class="fab fa-twitter"></i></a>
-                    <a href="#">Instagram<i class="fab fa-instagram"></i></a>
-                    <a href="#">LinkedIn<i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
+                <a href="#">Twitter<i class="fab fa-twitter"></i></a>
+                <a href="#">Instagram<i class="fab fa-instagram"></i></a>
+                <a href="#">LinkedIn<i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/dbf48b8be7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="web/src/js/script.js"></script>
 </body>
 </html>
