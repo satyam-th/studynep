@@ -37,6 +37,7 @@
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
+        margin-top: 60px;
         padding: 20px;
     }
     .about-left, .about-right {
